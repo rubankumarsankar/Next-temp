@@ -13,6 +13,12 @@ import { allprojects } from "@/data/projects";
 
 import React from "react";
 
+export async function generateStaticParams() {
+  return allprojects.map((project) => ({
+    id: project.id.toString(),
+  }));
+}
+
 export default async function page({ params }) {
   const { id } = await params;
 

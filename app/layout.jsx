@@ -72,6 +72,9 @@ export default function RootLayout({ children }) {
   }, []);
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/vgn.svg" />
+      </head>
       <body className="popup-loader">
         {children}
         <MobileMenu />
